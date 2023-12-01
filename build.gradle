@@ -15,6 +15,10 @@ repositories {
 	// for more information about repositories.
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/stratafied.accesswidener")
+}
+
 // All dependency versions are declared in the gradle.properties file
 dependencies {
 	minecraft "com.mojang:minecraft:${minecraft_version}"

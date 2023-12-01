@@ -1,12 +1,12 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "cocona20xx",
+		"id": "stratafied",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Stratafied",
+			"description": "Adds more stratas to the overworld.",
 			"contributors": {
 				"Me!": "Owner"
 			},
@@ -15,16 +15,16 @@
 				"issues": "https://github.com/cocona20xx/quilt-template-mod-gradle_properties/issues",
 				"sources": "https://github.com/cocona20xx/quilt-template-mod-gradle_properties"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/stratafied/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "cocona20xx.stratafied.StratafiedMod"
 		},
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.20.2"
+				"versions": ">=0.21.1"
 			},
 			{
 				"id": "minecraft",
@@ -32,9 +32,10 @@
 			},
 			{
 				"id": "quilted_fabric_api",
-				"versions": ">=7.2.1-"
+				"versions": ">=7.4.0-"
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "stratafied.mixins.json",
+	"access_widener": "stratafied.accesswidener"
 }
